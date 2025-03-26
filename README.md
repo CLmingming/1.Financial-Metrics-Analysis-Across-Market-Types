@@ -1,9 +1,60 @@
-This study involves analyzing financial and market data for A-share listed firms in China to evaluate key performance indicators and compare trends across market types. Utilizing the CSMAR database, the research compiles three categories of data:
+# Financial Metrics Analysis Across Market Types  
 
-Monthly market data (January 2000–September 2023), including stock prices, returns, and tradable market capitalization.
-Quarterly financial statements (2000Q1–2023Q3), comprising total assets, total liabilities, earnings per share (EPS), ROA, ROE, and R&D expenses.
-Firm-specific information, such as establishment dates and market type classifications (e.g., Main Board vs. GEM Board).
-The analysis proceeds in two stages:
-(a) Ratio Derivation: Manual computation of financial metrics, including monthly price-to-earnings (P/E) and price-to-book (P/B) ratios derived from stock prices, EPS, and book value per share (total assets minus liabilities). Quarterly metrics include R&D intensity (R&D expenses relative to total assets) and firm age (time since establishment).
+This study analyzes financial and market data for A-share listed firms in China to evaluate key performance indicators and compare trends across market types. The research leverages the **CSMAR database** and proceeds as follows:  
 
-(b) Comparative Summary Statistics: Statistical evaluation of monthly returns, P/E, P/B, quarterly ROA, ROE, R&D intensity, and firm age, segmented by market type. Metrics such as mean, median, quartiles (p25, p75), standard deviation, and observation counts are calculated to contrast performance and risk profiles between Main Board and GEM Board firms. The findings aim to uncover structural differences in valuation, profitability, innovation investment, and maturity across these markets, providing insights into their distinct characteristics and investor implications.
+---
+
+## **Data Collection**  
+The dataset comprises three categories:  
+1. **Monthly Market Data** (Jan. 2000–Sep. 2023)  
+   - Stock prices  
+   - Stock returns  
+   - Market value of tradable shares  
+
+2. **Quarterly Financial Statements** (2000Q1–2023Q3)  
+   - Total assets & liabilities  
+   - Earnings per share (EPS)  
+   - ROA, ROE  
+   - R&D expenses  
+
+3. **Firm-Specific Information**  
+   - Establishment date  
+   - Market type (Main Board vs. GEM Board)  
+
+---
+
+## **Methodology**  
+
+### (a) Ratio Derivation  
+- **Monthly Metrics**:  
+  - **P/E Ratio**: Stock price divided by quarterly EPS (annualized for monthly alignment).  
+  - **P/B Ratio**: Stock price divided by book value per share (total assets minus liabilities).  
+
+- **Quarterly Metrics**:  
+  - **R&D Intensity**: R&D expenses relative to total assets.  
+  - **Firm Age**: Time elapsed since establishment date.  
+
+### (b) Comparative Analysis  
+Summary statistics are calculated for:  
+- **Monthly Variables**: Stock returns, P/E, P/B ratios.  
+- **Quarterly Variables**: ROA, ROE, R&D intensity, firm age.  
+
+Key statistics include:  
+- Observation count  
+- Mean, median  
+- 25th and 75th percentiles (p25, p75)  
+- Standard deviation  
+
+Results are segmented by **market type** (Main Board vs. GEM Board) to identify structural differences in:  
+- Valuation (P/E, P/B)  
+- Profitability (ROA, ROE)  
+- Innovation investment (R&D intensity)  
+- Firm maturity (age)  
+
+---
+
+## **Objective**  
+By bridging raw financial data with actionable insights, this analysis aims to:  
+1. Highlight methodological rigor in metric derivation.  
+2. Uncover cross-market disparities in performance and risk profiles.  
+3. Provide implications for investors and policymakers.
